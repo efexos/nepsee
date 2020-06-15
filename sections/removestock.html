@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="../node_modules/bulma/css/bulma.css" />
+    <script src="../node_modules/@fortawesome/fontawesome-free/js/all.js"></script>
+  </head>
+  <body>
+    <section class="hero is-fullheight">
+      <div class="hero-head">
+        <nav class="tabs is-fullwidth">
+          <div class="container">
+            <ul style="margin-top: 10px;">
+              <img
+                style="width: 120px; height: 50px; margin-left: 20px;"
+                src="../assets/img/logo.png"
+                alt="Logo"
+              />
+            </ul>
+            <ul>
+              <li>
+                <a>
+                  <button
+                    id="confirm"
+                    class="button is-fullwidth has-text-black is-success"
+                  >
+                    <span class="icon">
+                      <i class="fas fa-check"></i>
+                    </span>
+                    <span>Confirm</span>
+                  </button>
+                </a>
+              </li>
+              <li>
+                <a>
+                  <button
+                    id="cancel"
+                    class="button is-fullwidth has-text-black is-success"
+                  >
+                    <span class="icon">
+                      <i class="fas fa-times"></i>
+                    </span>
+                    <span>Cancel</span>
+                  </button>
+                </a>
+              </li>
+            </ul>
+          </div>
+        </nav>
+      </div>
+
+      <div class="hero-body" style="padding-top: 0; padding-bottom: 0;">
+        <div class="container">
+          <div class="field">
+            <div class="control">
+              <input
+                id="stocksInput"
+                class="input is-success"
+                type="text"
+                placeholder="Stocks here seperated by comma."
+              />
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <script>
+      require("../renderer/cancelremove");
+      require("../renderer/confirmremove");
+    </script>
+  </body>
+</html>

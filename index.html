@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./node_modules/bulma/css/bulma.css" />
+    <script>
+      if (typeof module === "object") {
+        window.module = module;
+        module = undefined;
+      }
+    </script>
+    <script src="node_modules/jquery-ui-dist/external/jquery/jquery.js"></script>
+    <script src="node_modules/jquery-ui-dist/jquery-ui.js"></script>
+    <script src="node_modules/@fortawesome/fontawesome-free/js/all.js"></script>
+    <script>
+      if (window.module) {
+        module = window.module;
+      }
+    </script>
+    <script>
+      $(function() {
+        $("#prices").sortable();
+        $("#orders").sortable();
+      });
+    </script>
+  </head>
+  <body>
+    <section class="hero is-fullheight">
+      <!-- Hero head: will stick at the top -->
+      <div class="hero-head">
+        <nav class="tabs is-fullwidth">
+          <div class="container">
+            <ul style="margin-top: 10px;">
+              <img
+                style="width: 120px; height: 50px; margin-right: 20px;"
+                src="assets/img/logo.png"
+                alt="Logo"
+              />
+              <h1 style="padding-top: 10px;" class="title" id="nepse"></h1>
+              <h2
+                style="padding-top: 10px; margin-right: 20px;"
+                class="subtitle"
+                id="sense"
+              ></h2>
+              <progress
+                id="progress"
+                class="progress is-success"
+                max="100"
+              ></progress>
+            </ul>
+            <ul>
+              <li>
+                <a>
+                  <button
+                    id="addstock"
+                    class="button is-fullwidth has-text-black is-success"
+                  >
+                    <span class="icon">
+                      <i class="fas fa-plus"></i>
+                    </span>
+                    <span>Add Stock</span>
+                  </button>
+                </a>
+              </li>
+              <li>
+                <a>
+                  <button
+                    id="removestock"
+                    class="button is-fullwidth has-text-black is-success"
+                  >
+                    <span class="icon">
+                      <i class="fas fa-minus"></i>
+                    </span>
+                    <span>Remove Stock</span>
+                  </button>
+                </a>
+              </li>
+              <li>
+                <a>
+                  <button
+                    id="startspider"
+                    class="button is-fullwidth has-text-black is-success"
+                  >
+                    <span class="icon">
+                      <i class="fas fa-play"></i>
+                    </span>
+                    <span>Start Scraping</span>
+                  </button>
+                </a>
+              </li>
+              <li>
+                <a>
+                  <button
+                    id="stopspider"
+                    class="button is-fullwidth has-text-black is-success"
+                  >
+                    <span class="icon">
+                      <i class="fas fa-stop"></i>
+                    </span>
+                    <span>Stop Scraping</span>
+                  </button>
+                </a>
+              </li>
+              <li>
+                <a>
+                  <button
+                    id="openchart"
+                    class="button is-fullwidth has-text-black is-success"
+                  >
+                    <span class="icon">
+                      <i class="fas fa-chart-bar"></i>
+                    </span>
+                    <span>Open Chart</span>
+                  </button>
+                </a>
+              </li>
+            </ul>
+          </div>
+        </nav>
+      </div>
+
+      <!-- Hero content: will be in the middle -->
+      <div class="hero-body" style="padding-top: 0; padding-bottom: 0;">
+        <div class="container">
+          <div
+            id="table-con"
+            class="table-container"
+            style="height: 550px; overflow-y: scroll;"
+          >
+            <table
+              id="prices"
+              class="table is-bordered is-hoverable is-fullwidth"
+            >
+              <thead>
+                <tr class="has-background-white-ter">
+                  <th class="has-text-black">Stock Name</th>
+                  <th class="has-text-black">Live Price</th>
+                  <th class="has-text-black">Diff(Rs)</th>
+                  <th class="has-text-black">Diff(%)</th>
+                  <th class="has-text-black">Pr Close</th>
+                  <th class="has-text-black">Open Price</th>
+                  <th class="has-text-black">High Price</th>
+                  <th class="has-text-black">Low Price</th>
+                  <th class="has-text-black">Close Price</th>
+                </tr>
+              </thead>
+            </table>
+            <table
+              id="orders"
+              class="table is-bordered is-hoverable is-fullwidth"
+            >
+              <thead>
+                <tr class="has-background-white-ter">
+                  <th class="has-text-black">Stock Name</th>
+                  <th class="has-text-black">Buy Orders</th>
+                  <th class="has-text-black">Buy Quantity</th>
+                  <th class="has-text-black">Buy Price</th>
+                  <th class="has-text-black">Sell Price</th>
+                  <th class="has-text-black">Sell Quantity</th>
+                  <th class="has-text-black">Sell Orders</th>
+                </tr>
+              </thead>
+            </table>
+          </div>
+        </div>
+      </div>
+    </section>
+    <script>
+      require("./assets/indexElements/addstock");
+      require("./assets/indexElements/removestock");
+      require("./assets/indexElements/startspider");
+      require("./assets/indexElements/stopspider");
+      require("./assets/indexElements/openchart");
+      require("./assets/indexElements/progressbar");
+      require("./assets/indexElements/index");
+      require("./assets/indexElements/tables");
+    </script>
+  </body>
+</html>
