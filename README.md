@@ -51,5 +51,7 @@
 
 ### Regards
    > efexos
+
    > Mail:: efexos@protonmail.com
+   
    > Contact Me || Buy me a drink(e-sewa):: +977-9862177635 
