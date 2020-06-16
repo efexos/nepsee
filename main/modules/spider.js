@@ -29,9 +29,9 @@ async function startScraping() {
     await axios({
       method: "get",
       url: "http://www.nepalstock.com/",
-      timeout: 5000,
+      timeout: 5000
     })
-      .then((res) => {
+      .then(res => {
         var $ = cheerio.load(res.data);
         var index = $(".current-index")
           .text()
@@ -55,7 +55,7 @@ async function startScraping() {
           pointchange
         );
       })
-      .catch((error) => {
+      .catch(error => {
         console.log(error.code);
       });
     for (let page = 0; page < stocksId.length; page++) {
@@ -68,9 +68,9 @@ async function startScraping() {
       await axios({
         method: "get",
         url: "http://www.nepalstock.com/marketdepthofcompany/" + stocksId[page],
-        timeout: 5000,
+        timeout: 5000
       })
-        .then((res) => {
+        .then(res => {
           BrowserWindow.getAllWindows()[0].webContents.send(
             "progressinit",
             page + 1,
@@ -103,7 +103,7 @@ async function startScraping() {
               orders.slice(3, 6).concat(orders.slice(18, 21)),
               orders.slice(6, 9).concat(orders.slice(21, 24)),
               orders.slice(9, 12).concat(orders.slice(24, 27)),
-              orders.slice(12, 15).concat(orders.slice(27, 30)),
+              orders.slice(12, 15).concat(orders.slice(27, 30))
             ];
           } else {
             var f_orders = [
@@ -111,7 +111,7 @@ async function startScraping() {
               ["---", "---", "---", "---", "---", "---"],
               ["---", "---", "---", "---", "---", "---"],
               ["---", "---", "---", "---", "---", "---"],
-              ["---", "---", "---", "---", "---", "---"],
+              ["---", "---", "---", "---", "---", "---"]
             ];
           }
           BrowserWindow.getAllWindows()[0].webContents.send(
@@ -121,7 +121,7 @@ async function startScraping() {
             f_orders
           );
         })
-        .catch((error) => {
+        .catch(error => {
           console.log(error.code);
         });
     }
@@ -141,7 +141,7 @@ module.exports = {
     } else {
       ipcRenderer.send("open-error-dialog", "Err", "Os Not Supported", "");
     }
-    fs.writeFile(cacheFile, "", (error) => {
+    fs.writeFile(cacheFile, "", error => {
       if (error) {
         console.log(error.message);
       }
@@ -150,14 +150,14 @@ module.exports = {
       fs.appendFile(
         cacheFile,
         stocksAbbr[loop] + "," + stocksId[loop] + "\n",
-        (error) => {
+        error => {
           if (error) {
             console.log(error.message);
           }
         }
       );
     }
-  },
+  }
 };
 
 // Spider Catch Events
@@ -169,7 +169,7 @@ ipcMain.on("startspider", (e) => {
 });
 
 // Stop Spider Event
-ipcMain.on("stopspider", (e) => {
+ipcMain.on("stopspider", e => {
   spider = false;
 });
 

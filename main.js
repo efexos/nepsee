@@ -22,22 +22,22 @@ const mainMenu = [
         label: "Add Stock",
         click() {
           mainWin.webContents.send("addmenu");
-        },
+        }
       },
       {
         label: "Remove Stock",
         click() {
           mainWin.webContents.send("removemenu");
-        },
+        }
       },
       {
-        type: "separator",
+        type: "separator"
       },
       {
         label: "Quit",
-        role: "close",
-      },
-    ],
+        role: "close"
+      }
+    ]
   },
   {
     label: "nSee",
@@ -46,88 +46,88 @@ const mainMenu = [
         label: "Start nSee",
         click() {
           mainWin.webContents.send("startspidermenu");
-        },
+        }
       },
       {
         label: "Stop nSee",
         click() {
           mainWin.webContents.send("stopspidermenu");
-        },
+        }
       },
       {
-        type: "separator",
+        type: "separator"
       },
       {
         label: "Open Chart",
         click() {
           mainWin.webContents.send("openchartmenu");
-        },
+        }
       },
       {
         label: "Notify Me",
         click() {
           mainWin.webContents.send("notifyme");
-        },
-      },
-    ],
+        }
+      }
+    ]
   },
   {
     label: "Edit",
     submenu: [
       {
-        role: "undo",
+        role: "undo"
       },
       {
-        role: "redo",
+        role: "redo"
       },
       {
-        type: "separator",
+        type: "separator"
       },
       {
-        role: "cut",
+        role: "cut"
       },
       {
-        role: "copy",
+        role: "copy"
       },
       {
-        role: "paste",
-      },
-    ],
+        role: "paste"
+      }
+    ]
   },
   {
     label: "View",
     submenu: [
       {
-        role: "reload",
+        role: "reload"
       },
       {
-        type: "separator",
+        type: "separator"
       },
       {
-        role: "resetzoom",
+        role: "resetzoom"
       },
       {
-        role: "zoomin",
+        role: "zoomin"
       },
       {
-        role: "zoomout",
+        role: "zoomout"
       },
       {
-        type: "separator",
+        type: "separator"
       },
       {
-        role: "togglefullscreen",
-      },
-    ],
+        role: "togglefullscreen"
+      }
+    ]
   },
   {
     label: "Window",
     submenu: [
       {
-        role: "minimize",
-      },
-    ],
-  },
+        role: "minimize"
+      }
+    ]
+  }
 ];
 
 function initApp() {
@@ -140,10 +140,13 @@ function initApp() {
       height: 630,
       minHeight: 580,
       title: app.getName(),
-      webPreferences: { nodeIntegration: true },
+      webPreferences: { nodeIntegration: true }
     };
     if (process.platform === "linux") {
-      mainWinOptions.icon = path.join(__dirname, "/assets/app-icon/png/64.png");
+      mainWinOptions.icon = path.join(
+        __dirname,
+        "/assets/app-icon/png/512.png"
+      );
     }
     mainWin = new BrowserWindow(mainWinOptions);
     mainWin.loadURL(path.join("file://", __dirname, "index.html"));
@@ -176,7 +179,7 @@ function initApp() {
       }
       if (fs.existsSync(cacheFile)) {
         let stocks = fs.readFileSync(cacheFile, "utf8").split("\n");
-        stocks.forEach((stock) => {
+        stocks.forEach(stock => {
           if (stock.split(",").length == 2) {
             let [Abbr, Id] = stock.split(",");
             mainWin.webContents.send("confirmadd", Id, Abbr);
@@ -215,7 +218,7 @@ function makeSingleInstance() {
 
 function loadPages() {
   const files = glob.sync(path.join(__dirname, "main/**/*.js"));
-  files.forEach((file) => {
+  files.forEach(file => {
     require(file);
   });
 }
