@@ -14,10 +14,16 @@
     `$ npm start`
 ### NPM Scripts
  - Start :: Starts the app
+
     `$ npm start`
+ 
  - Debug :: Starts the app in debug mode
+
     `$ npm run dev`
+
  - Compile :: Compiles the app for Windows, Linux and Mac in "out" folder.
+
     `$ npm run compile`
+
  ##### See "package.json" file for all the scripts.
 ## Screenshots
