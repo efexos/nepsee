@@ -44,7 +44,7 @@
 ##### See "package.json" file for all the scripts.
 
 ## Screenshots
-![](https://pandao.github.io/efexos/nepsee/master/screenshots/sc1.png)
-![](https://pandao.github.io/efexos/nepsee/master/screenshots/sc2.png)
-![](https://pandao.github.io/efexos/nepsee/master/screenshots/sc3.png)
-![](https://pandao.github.io/efexos/nepsee/master/screenshots/sc4.png)
+![](https://github.com/efexos/nepsee/blob/master/screenshots/sc1.png)
+![](https://github.com/efexos/nepsee/blob/master/screenshots/sc2.png)
+![](https://github.com/efexos/nepsee/blob/master/screenshots/sc3.png)
+![](https://github.com/efexos/nepsee/blob/master/screenshots/sc4.png)
