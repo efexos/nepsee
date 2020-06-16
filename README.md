@@ -4,41 +4,47 @@
 ![](https://img.shields.io/badge/-Electron-blue)
 ![](https://img.shields.io/badge/-Javascript-orange)
 ![](https://img.shields.io/badge/-HTML-red)
+![](https://img.shields.io/badge/-NPM-blueviolet)
+![](https://img.shields.io/badge/-Node-ff68b4)
 
 ### Note
-- Visit [Google Drive Link](https://drive.google.com/drive/folders/1BiMXNkvClyFFvJmoSuCYRO4m72AWJv8X?usp=sharing) for the compiled version of the app.
- - Available for [Windows](https://drive.google.com/file/d/1xeyg5brzme4cWpgvfjyPaQ24zN-12dH4/view?usp=sharing), [Linux](https://drive.google.com/file/d/1ifu6XY4ou0Zyt23g6Qul0UURui-NRVRt/view?usp=sharing) and [Mac](https://drive.google.com/file/d/13ObRgVTJR5ADM7vB4kv17rGNhhbfJ06v/view?usp=sharing). 
+   - Visit [Google Drive Link](https://drive.google.com/drive/folders/1BiMXNkvClyFFvJmoSuCYRO4m72AWJv8X?usp=sharing) for the compiled version of the app.
+   - Available for [Windows](https://drive.google.com/file/d/1xeyg5brzme4cWpgvfjyPaQ24zN-12dH4/view?usp=sharing), [Linux](https://drive.google.com/file/d/1ifu6XY4ou0Zyt23g6Qul0UURui-NRVRt/view?usp=sharing) and [Mac](https://drive.google.com/file/d/13ObRgVTJR5ADM7vB4kv17rGNhhbfJ06v/view?usp=sharing). 
 
 ## Installation and Usage
- - Clone the nepsee repo to your local PC.
-
-    `$ git clone https://github.com/efexos/nepsee`
+   - Clone the nepsee repo to your local PC.
+   
+      `$ git clone https://github.com/efexos/nepsee`
  
- - Make sure you have npm installed, if not install npm.
-    > Install npm from here [NPM](https://www.npmjs.com/get-npm).
- - "cd" into cloned nepsee dir and install modules.
+   - Make sure you have npm installed, if not install npm.
+      > Install npm from here [NPM](https://www.npmjs.com/get-npm).
+   - "cd" into cloned nepsee dir and install modules.
+   
+      `$ cd ..../nepsee/`
 
-    `$ cd ..../nepsee/`
-
-    `$ npm install`
+      `$ npm install`
  
- - Now you can run the npm start script to run the app.
+   - Now you can run the npm start script to run the app.
  
-    `$ npm start`
+      `$ npm start`
 
 ### NPM Scripts
- - Start :: Starts the app
+   - Start :: Starts the app
 
-    `$ npm start`
+      `$ npm start`
  
- - Debug :: Starts the app in debug mode
+- Debug :: Starts the app in debug mode
 
-    `$ npm run dev`
+      `$ npm run dev`
 
  - Compile :: Compiles the app for Windows, Linux and Mac in "out" folder.
 
-    `$ npm run compile`
+      `$ npm run compile`
 
- ##### See "package.json" file for all the scripts.
+##### See "package.json" file for all the scripts.
 
 ## Screenshots
+![](https://pandao.github.io/efexos/nepsee/master/screenshots/sc1.png)
+![](https://pandao.github.io/efexos/nepsee/master/screenshots/sc2.png)
+![](https://pandao.github.io/efexos/nepsee/master/screenshots/sc3.png)
+![](https://pandao.github.io/efexos/nepsee/master/screenshots/sc4.png)
