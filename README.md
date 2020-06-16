@@ -48,3 +48,8 @@
 ![](https://github.com/efexos/nepsee/blob/master/screenshots/sc2.png)
 ![](https://github.com/efexos/nepsee/blob/master/screenshots/sc3.png)
 ![](https://github.com/efexos/nepsee/blob/master/screenshots/sc4.png)
+
+### Regards
+   > efexos
+   > Mail:: efexos@protonmail.com
+   > Contact Me || Buy me a drink(e-sewa):: +977-9862177635 
