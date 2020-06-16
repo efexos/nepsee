@@ -1,7 +1,7 @@
 {
   "name": "nepsee",
   "productName": "nepsee",
-  "version": "2.1.3",
+  "version": "2.1.4",
   "description": "Nepalstock Spider.",
   "main": "main.js",
   "scripts": {
