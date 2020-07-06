@@ -9,7 +9,7 @@
 
 ### Note
    - Visit [Google Drive Link](https://drive.google.com/drive/folders/1BiMXNkvClyFFvJmoSuCYRO4m72AWJv8X?usp=sharing) for the compiled version of the app.
-   - Available for [Windows](https://drive.google.com/file/d/1yaL59YjEAq73oPLdHgVjiIUjlDYtIEiD/view?usp=sharing), [Linux](https://drive.google.com/file/d/1hORdEqveV4mQrQfpURjTmb90LrXJI1sg/view?usp=sharing) and [Mac](https://drive.google.com/file/d/1eu7KnWat_7uoX-Ewz0Ke447fbQGWyKoM/view?usp=sharing). 
+   - Available for [Windows](https://drive.google.com/file/d/1W_ZcPSZtJbqnnuzyPOO7goiHK_eeVnz1/view?usp=sharing), [Linux](https://drive.google.com/file/d/12sacPfHWOA1oW_pLv51GECU7dXPTm4P0/view?usp=sharing) and [Mac](https://drive.google.com/file/d/1itZhWu4lutewdK3laV8yYCscsJ6sJZYd/view?usp=sharing). 
 
 ## Installation and Usage
    - Clone the nepsee repo to your local PC.
