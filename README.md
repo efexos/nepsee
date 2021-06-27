@@ -50,7 +50,7 @@
 ![](https://github.com/efexos/nepsee/blob/master/screenshots/sc4.png)
 
 ### Regards
-   > efexos
+   > efexos, (This app is outdated. No longer works.)
 
    > Mail:: efexos@protonmail.com
 
